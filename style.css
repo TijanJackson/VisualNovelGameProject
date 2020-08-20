@@ -124,8 +124,22 @@ body {
 
 }
 
+#stay:hover {
+    cursor: pointer;
+    border: solid white 6px;
+    background: rgba(255, 255, 255, 100%);
+}
+
+
+
 #go {
     margin-left: 20px;
+}
+
+#go:hover {
+    cursor: pointer;
+    border: solid white 6px;
+    background: rgba(255, 255, 255, 100%);
 }
 
 

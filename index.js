@@ -23,6 +23,18 @@ let lacking = document.getElementById("lack");
 
 // DECISIONS BEGIN
 
+
+// DECISION IF AND ELSE STATEMENT START
+
+// if (firstD1.style.background === "black") {
+
+// }
+// else if (firstD2.style.background === "black") {
+    
+// }
+
+// DECISION IF AND ELSE STATEMENT BEGIN
+
 let firstDecision = document.getElementById("firstDecision");
 
 // DECIDE 1
@@ -34,6 +46,7 @@ firstD1.addEventListener("click", function() {
     firstD1.style.background = "black";
     firstD1.style.border = "black";
     firstD2.style.display = "none";
+    firstDecision.style.display = 'none';
 })
 
 
@@ -41,6 +54,7 @@ firstD2.addEventListener("click", function() {
     firstD2.style.background = "black";
     firstD2.style.border = "black";
     firstD1.style.display = "none";
+    firstDecision.style.display = 'none';
 })
 
 
@@ -514,7 +528,6 @@ let textThirtySeven = () => {
 }
 
 let textThirtyEight = () => {
-    charName.innerHTML = stranger;
     text.innerHTML = `You did see, didn't you..?.`;
     thirtysevenClick = false;
     thirtyeightClick = true;
@@ -583,7 +596,6 @@ let textFortySix = () => {
 
 let textFortySeven = () => {
     if (firstD1.style.background === "black") {
-        firstDecision.style.display = "none";
         background.src = 'thumbs2.png';
         // charName.innerHTML = cName;
         text.innerHTML = `Wait... please.`;
@@ -591,7 +603,6 @@ let textFortySeven = () => {
         fortysevenClick = true;
     }
     else if (firstD2.style.background === "black") {
-        firstDecision.style.display = "none";
         text.innerHTML = `Alright, bye.`
         fortysixClick = false;
         fortysevenClick = true;
@@ -620,50 +631,711 @@ let textFortyEight = () => {
 }
 
 let textFortyNine = () => {
-    
+    if (firstD1.style.background === "black") {
+        background.src = 'thumbs2.png';
+        text.innerHTML = `Don't leave...`;
+        fortyeightClick = false;
+        fortynineClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        background.src = `MainProtag.png`;
+        text.innerHTML = `I wished I'd asked him to stay with me. Dammit.`;
+        fortyeightClick = false;
+        fortynineClick = true;
+    }
 }
 
 let textFifty = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = stranger;
+        background.src = 'Whywhatswrong.png';
+        text.innerHTML = `Why? Is something wrong?`;
+        fortynineClick = false;
+        fiftyClick = true;
 
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `Guess its back to my depression`;
+        fortynineClick = false;
+        fiftyClick = true;
+    
+    }
 }
 
 let textFiftyOne = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = cName;
+        background.src = 'thumbs3.png';
+        text.innerHTML = `I... I just... don't want to be alone right now.`;
+        fiftyClick = false;
+        fiftyoneClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `Well that's depressing.`;
+        fiftyClick = false;
+        fiftyoneClick = true;
+    }
     
 }
 
 let textFiftyTwo = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = stranger;
+        background.src = 'Whywhatswrong.png';
+        text.innerHTML = `...`;
+        fiftyoneClick = false;
+        fiftytwoClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `Guess I'll go sleep.`;
+        // Sleeping loading screen;
+        fiftyoneClick = false;
+        fiftytwoClick = true;
+    
+    }
     
 }
 
 let textFiftyThree = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = cName;
+        background.src = 'thumbs2.png';
+        text.innerHTML = `I won't ask you to stay and stay with me for long. I'm sure you have things to do.`;
+        fiftytwoClick = false;
+        fiftythreeClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        fiftytwoClick = false;
+        fiftythreeClick = true;
+    
+    }
     
 }
 
 let textFiftyFour = () => {
+    if (firstD1.style.background === "black") {
+        background.src = 'thumbs1.png';
+        text.innerHTML = `It's okay if you can't want to though. I understand.`;
+        fiftythreeClick = false;
+        fiftyfourClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        fiftythreeClick = false;
+        fiftyfourClick = true;
+    
+    }
     
 }
 
 let textFiftyFive = () => {
+    if (firstD1.style.background === "black") {
+        background.src = 'Whywhatswrong.png';
+        charName.innerHTML = stranger;
+        text.innerHTML = `...`;
+        fiftyfourClick = false;
+        fiftyfiveClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        fiftyfourClick = false;
+        fiftyfiveClick = true;
+    }
     
 }
 
 let textFiftySix = () => {
+    if (firstD1.style.background === "black") {
+        background.src = `Sure2.png`;
+        text.innerHTML = `Sure. I don't mind staying a bit.`;
+        fiftyfiveClick = false;
+        fiftysixClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        fiftyfiveClick = false;
+        fiftysixClick = true;
+    
+    }
     
 }
 
 let textFiftySeven = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = cName;
+        background.src = 'thumbs2.png';
+        text.innerHTML = `Um...`;
+        fiftysixClick = false;
+        fiftysevenClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        fiftysixClick = false;
+        fiftysevenClick = true;
+    
+    }
     
 }
 
 let textFiftyEight = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = stranger;
+        background.src = `alrightGood.png`;
+        text.innerHTML = `Hmmm?`;
+        fiftysevenClick = false;
+        fiftyeightClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        fiftysevenClick = false;
+        fiftyeightClick = true;
+    }
+    
+}
+
+let textFiftyNine = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = cName;
+        background.src = `thumbs3.png`;
+        text.innerHTML = `Could you possibly... walk with me... home...?`;
+        fiftyeightClick = false;
+        fiftynineClick = true;
+
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        fiftyeightClick = false;
+        fiftynineClick = true;
+    
+    }
+}
+
+
+let textSixty = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = stranger;
+        background.src = `Sure2.png`;
+        text.innerHTML = `Sure. Whenever you're ready to go, I'll walk with you.`;
+        fiftynineClick = false;
+        sixtyClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        fiftynineClick = false;
+        sixtyClick = true;
+    
+    }
+}
+
+let textSixtyOne = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = cName;
+        background.src = `thumbs2.png`;
+        text.innerHTML = `Th-thank you so much. I'm ready to go now.`;
+        sixtyClick = false;
+        sixtyoneClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        sixtyClick = false;
+        sixtyoneClick = true;
+    
+    }
+    
+}
+
+let textSixtyTwo = () => {
+    if (firstD1.style.background === "black") {
+        background.src = `Walk1.png`;
+        text.innerHTML = `...`;
+        sixtyoneClick = false;
+        sixtytwoClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        sixtyoneClick = false;
+        sixtytwoClick = true;
+        
+    }
+}
+
+
+let textSixtyThree = () =>{
+    if (firstD1.style.background === "black") {
+        background.src = `Heremyplace1.png`;
+        text.innerHTML = `H-Here's my place...`;
+        sixtytwoClick = false;
+        sixtythreeClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        sixtytwoClick = false;
+        sixtythreeClick = true;
+        
+    }
+    
+}
+
+let textSixtyFour = () => {
+    if (firstD1.style.background === "black") {
+        background.src = `thankyou1.png`;
+        text.innerHTML = `T-T-thank you for w-w-walking me home!`;
+        sixtythreeClick = false;
+        sixtyfourClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        sixtythreeClick = false;
+        sixtyfourClick = true;
+        
+    }
+
+}
+
+let textSixtyFive = () => {
+    if (firstD1.style.background === "black") {
+        background.src = `thankyou2.png`;
+        text.innerHTML = `You're a good person sir.`;
+        sixtyfourClick = false;
+        sixtyfiveClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        sixtyfourClick = false;
+        sixtyfiveClick = true;
+        
+    }
+
+}
+
+let textSixtySix = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = stranger;
+        background.src = `Bye4.png`;
+        text.innerHTML = `Sir?`;
+        sixtyfiveClick = false;
+        sixtysixClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        sixtyfiveClick = false;
+        sixtysixClick = true;
+        
+    }
+
+}
+
+let textSixtySeven = () => {
+    if (firstD1.style.background === "black") {
+        background.src = `Bye4.png`;
+        text.innerHTML = `I'm sure we're around the same age. But maybe I am older? Who knows.`;
+        sixtysixClick = false;
+        sixtysevenClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        sixtysixClick = false;
+        sixtysevenClick = true;
+        
+    }
+
+}
+
+let textSixtyEight = () => {
+    if (firstD1.style.background === "black") {
+        background.src = `Bye3.png`;
+        text.innerHTML = `Anyway, it's starting to get colder now, so maybe you should get indoors.`;
+        sixtysevenClick = false;
+        sixtyeightClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        sixtysevenClick = false;
+        sixtyeightClick = true;
+        
+    }
+
+}
+
+let textSixtyNine = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = cName;
+        background.src = `Bye1.png`;
+        text.innerHTML = `Mm. I think that's good idea.`;
+        sixtyeightClick = false;
+        sixtynineClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        sixtyeightClick = false;
+        sixtynineClick = true;
+        
+    }
+
+}
+
+
+let textSeventy = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = stranger;
+        background.src = `Bye3.png`;
+        text.innerHTML = `Alright then. I'll be leaving now. You have a good night miss.`;
+        sixtynineClick = false;
+        seventyClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        sixtynineClick = false;
+        seventyClick = true;
+        
+    }
+
+}
+
+let textSeventyOne = () => {
+    if (firstD1.style.background === "black") {
+        charName.innerHTML = cName;
+        background.src = `Bye2.png`;
+        text.innerHTML = `...`;
+        seventyClick = false;
+        seventyoneClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        seventyClick = false;
+        seventyoneClick = true;
+        
+    }
+
+}
+
+let textSeventyTwo = () => {
+    if (firstD1.style.background === "black") {
+        text.innerHTML = `G... G-G-Goodnight!`;
+        seventyoneClick = false;
+        seventytwoClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        seventyoneClick = false;
+        seventytwoClick = true;
+        
+    }
+
+}
+
+let textSeventyThree = () => {
+    if (firstD1.style.background === "black") {
+        background.src = `MainProtagsaiEdit7_0.png`;
+        seventytwoClick = false;
+        seventythreeClick = true;
+
+    }
+    else if (firstD2.style.background === "black") {
+        text.innerHTML = `...`;
+        seventytwoClick = false;
+        seventythreeClick = true;
+        
+    }
+
+}
+
+let textSeventyFour = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+
+}
+
+let textSeventyFive = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+
+}
+
+let textSeventySix = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+
+}
+
+let textSeventySeven = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+
+}
+
+let textSeventyEight = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+
+}
+
+let textSeventyNine = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+
+}
+
+
+let textEighty = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+
+}
+
+let textEightyOne = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textEightyTwo = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textEightyThree = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textEightyFour = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textEightyFive = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textEightySix = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textEightySeven = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textEightyEight = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textEightyNine = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
     
 }
 
 
+let textNinety = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+
+}
+
+let textNinetyOne = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textNinetyTwo = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textNinetyThree = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textNinetyFour = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textNinetyFive = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textNinetySix = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textNinetySeven = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textNinetyEight = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
+
+let textNinetyNine = () => {
+    if (firstD1.style.background === "black") {
+
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
+    
+}
 
 
+let textOneHundred = () => {
+    if (firstD1.style.background === "black") {
 
+    }
+    else if (firstD2.style.background === "black") {
+        
+    }
 
+}
 
 
 
@@ -840,5 +1512,80 @@ background.addEventListener('click', function() {
     }
     else if (fiftyClick) {
         textFiftyOne();
+    }
+    else if (fiftyoneClick) {
+        textFiftyTwo();
+    }
+    else if (fiftytwoClick) {
+        textFiftyThree();
+    }
+    else if (fiftythreeClick) {
+        textFiftyFour();
+    }
+    else if (fiftyfourClick) {
+        textFiftyFive();
+    }
+    else if (fiftyfiveClick) {
+        textFiftySix();
+    }
+    else if (fiftysixClick) {
+        textFiftySeven();
+    }
+    else if (fiftysevenClick) {
+        textFiftyEight();
+    }
+    else if (fiftyeightClick) {
+        textFiftyNine();
+    }
+    else if (fiftynineClick) {
+        textSixty();
+    }
+    else if (sixtyClick) {
+        textSixtyOne();
+    }
+    else if (sixtyoneClick) {
+        textSixtyTwo();
+    }
+    else if (sixtytwoClick) {
+        textSixtyThree();
+    }
+    else if (sixtythreeClick) {
+        textSixtyFour();
+    }
+    else if (sixtyfourClick) {
+        textSixtyFive();
+    }
+    else if (sixtyfiveClick) {
+        textSixtySix();
+    }
+    else if (sixtysixClick) {
+        textSixtySeven();
+    }
+    else if (sixtysevenClick) {
+        textSixtyEight();
+    }
+    else if (sixtyeightClick) {
+        textSixtyNine();
+    }
+    else if (sixtynineClick) {
+        textSeventy();
+    }
+    else if (seventyClick) {
+        textSeventyOne();
+    }
+    else if (seventyoneClick) {
+        textSeventyTwo();
+    }
+    else if (seventytwoClick) {
+        textSeventyThree();
+    }
+    else if (seventythreeClick) {
+        textSeventyFour();
+    }
+    else if (seventyfourClick) {
+        textSeventyFive();
+    }
+    else if (seventyfiveClick) {
+        textSeventySix();
     }
 })
